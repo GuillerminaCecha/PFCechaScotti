@@ -1,0 +1,79 @@
+/* body{
+    background-color: crimson;
+} */
+
+.seccion-grilla {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecera, .navbar, .seccion, .seccion2, .seccion3, .pie {
+    padding: 10px;
+    border: 1px solid black;
+    overflow: scroll; 
+}
+
+/* Grillas */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 200px 200px 200px */
+    grid-template-rows: 250px 60px  70px;
+    /*  row-gap: 1rem;
+    column-gap: 2rem;*/
+    gap:10px 10px; 
+
+    /* areas */
+    grid-template-areas:
+    "cabecera"
+    "navbar"
+    "seccion"
+    "seccion2"
+    "seccion3"
+    "pie" 
+    ;
+}
+
+.cabecera {
+    background-color: white;
+    background-size: cover;
+    color: #fff;    
+    font-size: 1.2rem;
+    grid-area: cabecera;
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    grid-area: navbar;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.seccion {
+    grid-area: seccion;
+}
+
+.seccion2 {
+    grid-area: seccion2;
+}
+
+.seccion3 {
+    grid-area: seccion3;
+}
+
+.pie {
+    background-color: limegreen;
+    grid-area: pie;
+}
+
