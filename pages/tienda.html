@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprar miel barata. Tienda con derivados apicolas. Remedios para la tos.">
+    <meta name="keywords" content="miel, polen, jalea real, caramelos propoleo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Tienda</title>
-
 </head>
 <body>
-    <header>
-    <nav class="navegacion" id= "top">
+ <header>
+   <nav class="navegacion" id= "top">
+
+<!---  Logo container  --->
+
         <div class="logo__container">
            <img 
            src="../img/logochico.png" 
@@ -21,11 +28,13 @@
            />
            <span>La Reina Dorada</span>
            </div>
-            <!---  menu mobile  --->
-            <input type="checkbox" id="check_menu">
-            <label for="check_menu">
-                <i class="bx bx-menu"></i>
-            </label>
+
+  <!---  menu mobile  --->
+
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+             <nav class="nav" id="nav">
+               <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+          
             <ul class="navegacion__nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
@@ -35,96 +44,122 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="principal">
-            <h1>Tienda</h1>
-            </section>
-       
-    </main> 
-
-    <section class="contenedor-padre">
-        <div class="contenedor-hijo">
-            <img 
-             src="../img/JaleaReal.jpg" 
-             alt="Jalea Real"
-             class="img-tienda">
-            <h3>Jalea real x10grs</h3>
-            <p>$ 2.900</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Mielx1kg.jpg" 
-             alt="Miel x 1kg"
-             class="img-tienda">
-            <h3>Miel de abejas x1kg</h3>
-            <p>$ 3.200</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Mielx2kg.jpg" 
-             alt="Miel x 2kg"
-             class="img-tienda">
-            <h3>Miel de abejas x2kg</h3>
-            <p>$ 6.200</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Polen500gr.jpg" 
-             alt="Polen granulado x500grs"
-             class="img-tienda">
-            <h3>Polen granulado x500grs</h3>
-            <p>$ 2.900</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/CaramelosPropoleo.jpg" 
-             alt="Caramelos de Propoleo"
-             class="img-tienda">
-            <h3>Caramelos de Propoleo x20un</h3>
-            <p>$ 1.500</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Cremadeordene.jpg" 
-             alt="Cremadeordene"
-             class="img-tienda">
-            <h3>Crema de ordeñe</h3>
-            <p>$ 3.800</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Palocatador.jpg" 
-             alt="Palo catador"
-             class="img-tienda">
-            <h3>Palo catador pequeño</h3>
-            <p>$ 900</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/PropoleoNatural.jpg" 
-             alt="Propoleo natural"
-             class="img-tienda">
-            <h3>Propoleo natural x20gr</h3>
-            <p>$ 4.900</p>
-          </div>
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/mielenpanal.jpg" 
-             alt="Miel en panal"
-             class="img-tienda">
-            <h3>Miel en panal x350gr</h3>
-            <p>$ 2.500</p>
-          </div>
-
-          <div class="contenedor-hijo">
-            <img 
-             src="../img/Velachica.jpg" 
-             alt="Vela Chica"
-             class="img-tienda">
-            <h3>Vela chica en forma de pino</h3>
-            <p>$ 2.700</p>
-          </div>
-          
+    <script src="../js/main.js"></script>
+<main>
+ <section class="principaltienda">
+  <h1>Tienda</h1>
+   </section>
+ 
+<section class="contenedor-padre">
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/JaleaReal.jpg" 
+     alt="Jalea Real"
+     class="img-tienda">
+     <h3>Jalea real x10grs</h3>
+     <div class="precio_tienda">
+      <p>$ 2.900</p>   </div>
+      </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/Mielx1kg.jpg" 
+     alt="Miel x 1kg"
+     class="img-tienda">
+     <h3>Miel de abejas x1kg</h3>
+     <div class="precio_tienda">
+     <p>$ 3.200</p>   </div>
+      </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/Mielx2kg.jpg" 
+     alt="Miel x 2kg"
+     class="img-tienda">
+     <h3>Miel de abejas x2kg</h3>
+     <div class="precio_tienda">
+     <p>$ 6.200</p>   </div>
+     </div>
+   <div class="contenedor-hijo">
+    <img 
+      src="../img/Polen500gr.jpg" 
+      alt="Polen granulado x500grs"
+      class="img-tienda">
+      <h3>Polen granulado x500grs</h3>
+      <div class="precio_tienda">
+      <p>$ 2.900</p>   </div>
+      </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/CaramelosPropoleo.jpg" 
+     alt="Caramelos de Propoleo"
+     class="img-tienda">
+     <h3>Caramelos de Propoleo x20un</h3>
+     <div class="precio_tienda">
+      <p>$ 1.500</p>   </div>
+      </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/Cremadeordene.jpg" 
+     alt="Cremadeordene"
+     class="img-tienda">
+     <h3>Crema de ordeñe</h3>
+     <div class="precio_tienda">
+     <p>$ 3.800</p>   </div>
+     </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/Palocatador.jpg" 
+     alt="Palo catador"
+     class="img-tienda">
+     <h3>Palo catador pequeño</h3>
+     <div class="precio_tienda">
+     <p>$ 900</p>    </div>
+     </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/PropoleoNatural.jpg" 
+     alt="Propoleo natural"
+     class="img-tienda">
+     <h3>Propoleo natural x20gr</h3>
+     <div class="precio_tienda">
+     <p>$ 4.900</p>    </div>
+     </div>
+   <div class="contenedor-hijo">
+    <img 
+      src="../img/mielenpanal.jpg" 
+      alt="Miel en panal"
+      class="img-tienda">
+      <h3>Miel en panal x350gr</h3>
+      <div class="precio_tienda">
+      <p>$ 2.500</p>   </div>
+      </div>
+   <div class="contenedor-hijo">
+    <img 
+     src="../img/Velachica.jpg" 
+     alt="Vela Chica"
+     class="img-tienda">
+     <h3>Vela chica en forma de pino</h3>
+     <div class="precio_tienda">
+     <p>$ 2.700</p>    </div>
+     </div>
     </section>
+</div>
+</main> 
 </body>
+
+<!--pie de pagina-->
+
+<footer> 
+  <div class="piedepagina">
+  <nav>
+      <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./historia.html">Historia</a></li>
+          <li><a href="./noticias.html">Noticias</a></li>
+          <li><a href="./tienda.html">Tienda</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+     </div>
+     </nav>
+   </footer>
+ 
 </html>

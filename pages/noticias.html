@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Noticias de apicultura. Novedades del mundo de las abejas.">
+    <meta name="keywords" content="actualidad, apicultura, miel, cosecha de miel, campo, girasoles">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/style.css" />
     
     <title>Noticias </title>
-
-
 </head>
 <body>
-
-
  <header>
     <nav class="navegacion" id= "top">
+    <!---  Logo container  --->
         <div class="logo__container">
            <img 
            src="../img/logochico.png" 
@@ -27,10 +29,11 @@
            <span>La Reina Dorada</span>
            </div>
             <!---  menu mobile  --->
-            <input type="checkbox" id="check_menu">
-            <label for="check_menu">
-                <i class="bx bx-menu"></i>
-            </label>
+            
+         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+         <nav class="nav" id="nav">
+           <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            
             <ul class="navegacion__nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
@@ -40,11 +43,10 @@
             </ul>
     </nav>
    </header>   
+   <script src="../js/main.js"></script>
 
  <!-- seccion de cards en noticias -->
-
-       <section class="noticias">
-        <h1>Noticias </h1>
+       <section class="noticias"> Noticias
         <section class="noticias_container">
           <div class="card" data-aos="fade-right">
             <img
@@ -56,10 +58,11 @@
               <h4>Jornadas apicolas de malabrigo - 12 y 13 de Diciembre</h4>
             </div>
             <div class="card_container">
+              <div class="texto-publi-anteriores">
               <p>
                 Este año nuevamente viajaremos hacia el norte santafesino para las jornadas apícolas de Malabrigo. Las mismas se realizarán los días 12 y 13 de Diciembre en el Club Juventud de Malabrigo.
                 En el programa debajo encontrarán toda la información de las actividades que se estarán realizando así como los puntos de contacto por cualquier inquietud.
-              </p>
+              </p></div>
               <a href="" class="boton_leermas">Leer más...</a>
             </div>
           </div>
@@ -73,10 +76,11 @@
               <h4>Conocé las próximas exposiciones de apicultura</h4>
             </div>
             <div class="card_container">
+              <div class="texto-publi-anteriores">
               <p>
                 En esta sección iremos publicando las próximas exposiciones de apicultura que se realizan con frecuencia en el país.
                 Desde hace 20 años asistimos a las principales ferias y exposiciones, donde podrán encontrar toda nuestra línea de productos. 
-              </p>
+              </p></div>
               <a href="" class="boton_leermas">Leer más...</a>
             </div>
           </div>
@@ -90,16 +94,100 @@
               <h4>Venta de reinas y núcleos</h4>
             </div>
             <div class="card_container">
+              <div class="texto-publi-anteriores">
               <p>
                 Está llegando el verano y como todos los años ya disponemos de reinas fecundadas y de núcleos de 4 cuadros.
                 Comuníquese con nosotros para reservar sus reinas fecundadas, directas de los mejores criaderos del país y marcadas con el color correspondiente.
-              </p>
+              </p></div>
               <a href="" class="boton_leermas">Leer más...</a>
             </div>
-          </div>              
+          </div>     
+          <div class="card">
+            <img
+              src="../img/aportefortalecimiento.jpg"
+              alt="aportefortalecimiento"
+              class="img-normalizada"   />
+            <div class="card_title">
+              <h4>Más de 650 productores apícolas recibirán el aporte del programa de Fortalecimiento Productivo</h4>
+            </div>
+            <div class="card_container">
+              <div class="texto-publi-anteriores">
+              <p>
+                En el marco del programa nacional de Fortalecimiento Productivo para la Cadena Apícola, 653 apicultores entrerrianos que se inscribieron en la primera etapa, recibirán sus aportes para mejorar sus condiciones productivas y comerciales.
+              </p></div>
+              <a href="" class="boton_leermas">Leer más...</a>
+            </div>
+          </div>    
+          <div class="card">
+            <img
+              src="../img/mielchina.jpg"
+              alt="mielchina"
+              class="img-normalizada" />
+            <div class="card_title">
+              <h4>Los apicultores se manifiestan contra el fraude y la importación de miel china</h4>
+            </div>
+            <div class="card_container">
+              <div class="texto-publi-anteriores">
+              <p>
+                El sector reclama un etiquetado donde, además del país de origen, se indique su porcentaje para no dañar al productor y engañar a los consumidores. 
+              </p> </div>
+              <a href="" class="boton_leermas">Leer más...</a>
+            </div>
+          </div>  
+          <div class="card">
+            <img
+              src="../img/bahillo.jpg"
+              alt="bahillo"
+              class="img-normalizada"
+            />
+            <div class="card_title">
+              <h4>Bahillo destacó a la apicultura como una actividad central para avanzar hacia modelos económicamente sostenibles</h4>
+            </div>
+            <div class="card_container">
+              <div class="texto-publi-anteriores">
+              <p>
+                Durante la apertura de la tercera edición del Congreso Apícola Periurbano, una feria de productores y stands institucionales de las entidades que componen la Mesa Apícola Periurbana y las instituciones públicas participantes.
+              </p> </div>
+              <a href="" class="boton_leermas">Leer más...</a>
+            </div>
+          </div>  
+          <div class="card">
+            <img
+              src="../img/inta.jpg"
+              alt="inta"
+              class="img-normalizada"
+            />
+            <div class="card_title">
+              <h4>Experto del INTA presentó las estrategias para producir miel de calidad</h4>
+            </div>
+            <div class="card_container">
+              <div class="texto-publi-anteriores">
+              <p>
+                El Programa Nacional Apícola del INTA promueve una práctica dinámica diseñada para producir miel de alta calidad adaptada a las condiciones locales y a los objetivos de producción. 
+              </p> </div>
+              <a href="" class="boton_leermas">Leer más...</a>
+            </div>
+          </div>  
+          <div class="card">
+            <img
+              src="../img/semanadelamiel.jpg"
+              alt="semanadelamiel"
+              class="img-normalizada" />
+            <div class="card_title">
+              <h4>Agricultura presentó la 8° Edición de la Semana de la Miel</h4>
+            </div>
+            <div class="card_container">
+              <div class="texto-publi-anteriores">
+              <p>
+                Del 14 al 20 de Enero 2024 se desarrollará esta iniciativa que tiene como objetivo promover el consumo interno, poner en valor el trabajo de las y los apicultores, y dar a conocer la importancia de la abeja como pieza fundamental de nuestro ecosistema, en el marco de la Campaña Más Miel todo el Año.. 
+              </p> </div>  
+              <a href="" class="boton_leermas">Leer más...</a>
+            </div>
+          </div>  
      </section>
       </section>
-
+      
+<!--pie de pagina-->
 
     <footer> 
         <div class="piedepagina">
@@ -114,9 +202,5 @@
         </div>
         </nav>
     </footer>
-    
-
-
-
  </body>
 </html>

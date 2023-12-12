@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacion sobre las abejas. Historia de la Reina Dorada. Informacion sobre inicio de apicultores.">
+    <meta name="keywords" content="La Reina Dorada, historia de apicultores, familia Cecha, inicios apicultura">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Historia</title>
-
 </head>
 <body>
     <header>
     <nav class="navegacion" id= "top">
+     <!---  Logo container  --->
         <div class="logo__container">
            <img 
            src="../img/logochico.png" 
@@ -22,10 +27,11 @@
            <span>La Reina Dorada</span>
            </div>
             <!---  menu mobile  --->
-            <input type="checkbox" id="check_menu">
-            <label for="check_menu">
-                <i class="bx bx-menu"></i>
-            </label>
+
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+           <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            
             <ul class="navegacion__nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
@@ -34,19 +40,20 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section class="principal">
-            <div class="historia"> Acerca de nosotros </div>
-           <br>
-             <div class="texto-indroduccion"> En el 2023 celebramos 110 años de historia junto a ustedes.
-                <br>
-                Somos una familia argentina que produce los más deliciosos derivados apicolas, combinando materia prima de primera calidad, tecnología de vanguardia y las mejores manos: las de nuestra gente.
-                <br>
-                Hoy el mundo nos ofrece diversas alternativas para estar más cerca tuyo y poder compartir momentos y experiencias únicas. Es a través de este sitio, que generamos un nuevo canal para poder ofrecer nuestros productos y poder llegar así a los hogares de todos aquellos que quieren disfrutar la calidad y tradición que nos representa. 
-                <br>
-                Nos inspira la convicción de trabajar y crecer constantemente. Estamos atentos a todas y cada una de sus necesidades y nos capacitamos continuamente para afrontar los nuevos cambios, con la pasión y la dedicación de siempre.
-                <br>
+</header>
+<script src="../js/main.js"></script>
+ <main>
+    <section class="principal">
+     <div class="historia"> Acerca de nosotros </div>
+        <br>
+     <div class="texto-indroduccion"> En el 2023 celebramos 110 años de historia junto a ustedes.
+        <br>
+      Somos una familia argentina que produce los más deliciosos derivados apicolas, combinando materia prima de primera calidad, tecnología de vanguardia y las mejores manos: las de nuestra gente.
+        <br>
+       Hoy el mundo nos ofrece diversas alternativas para estar más cerca tuyo y poder compartir momentos y experiencias únicas. Es a través de este sitio, que generamos un nuevo canal para poder ofrecer nuestros productos y poder llegar así a los hogares de todos aquellos que quieren disfrutar la calidad y tradición que nos representa. 
+        <br>
+        Nos inspira la convicción de trabajar y crecer constantemente. Estamos atentos a todas y cada una de sus necesidades y nos capacitamos continuamente para afrontar los nuevos cambios, con la pasión y la dedicación de siempre.
+        <br>
                 Una vez más, gracias por elegirnos y dejarnos compartir momentos junto a vos. </div>
                 <br>
              <div class="nuestra-historia"> Nuestra historia </div>
@@ -69,10 +76,35 @@
                  </div>    
                  <br>
             </p>
-
+     <div class="slider-container">  
+                <img
+                 class="slider-item"
+                 src= "../img/slider1.jpg" />
+                <img
+                 class="slider-item"
+                 src="../img/slider2.jpg" />
+                <img
+                 class="slider-item"
+                 src="../img/slider3.jpg" />             
+                </div>  
 
         </section>
     </main>  
-    </html>
 </body>
+
+<!--pie de pagina-->
+
+<footer> 
+    <div class="piedepagina">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./historia.html">Historia</a></li>
+            <li><a href="./noticias.html">Noticias</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+</footer>
 </html>
