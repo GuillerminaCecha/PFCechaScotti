@@ -3,6 +3,21 @@
   padding: 0;
 }
 
+.Tituloerror404 {
+  size: 45px;
+  color: black;
+}
+
+.Notfound {
+  size: 20px;
+  color: black;
+}
+
+.Irainicio {
+  size: 15px;
+  color: black;
+}
+
 h1 {
   color: black;
   text-align: center;
